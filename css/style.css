@@ -1,0 +1,105 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Contact Card */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #48b37a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 35px; /* Add margin for better spacing */
+    border: 5px solid #fff; /* Add a white border to simulate a circle in a box */
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contact Name */
+.contact-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Contact Title */
+.contact-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact Phone */
+.contact-phone {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact Company */
+.contact-company {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .contact-card {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-details {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-card {
+        max-width: 768px;
+        padding: 40px;
+    }
+
+    .contact-name {
+        font-size: 28px;
+    }
+
+    .contact-title, .contact-phone, .contact-company {
+        font-size: 20px;
+    }
+}
