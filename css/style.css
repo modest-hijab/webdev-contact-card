@@ -21,7 +21,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -39,8 +39,8 @@ body {
 
 .profile-img {
     border-radius: 50%;
-    width: 100px; /* Original size */
-    height: 100px; /* Original size */
+    width: 200px; /* Original size */
+    height: 200px; /* Original size */
     object-fit: cover;
     border: 5px solid #fff;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .card {
         padding: 10px;
     }
